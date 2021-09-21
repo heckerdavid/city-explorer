@@ -30,11 +30,21 @@ Name of feature: Map: As a user, I want to see a map of the city so that I can s
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 1810
+Start time: 1810 / 1945
+
+Finish time: 1915 / 2005
+
+Actual time needed to complete: 1 hour 25 minutes
+
+Name of feature: Errors: As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2010
 
 Finish time: 
 
-Actual time needed to complete: 
+Actual time needed to complete:
 
 
 ## Credit and Collaborations
