@@ -11,6 +11,8 @@ Allow the user to input a city name and receive data about the city
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
+- ![WRRC](./public/cameron.png)
+
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
@@ -56,3 +58,4 @@ Actual time needed to complete: 20 minutes
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+- Pair programmed 11/20/21 with Cameron Walden, covering the WRRC
