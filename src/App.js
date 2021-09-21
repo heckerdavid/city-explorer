@@ -32,7 +32,7 @@ export default class App extends React.Component {
       this.setState({
         locationData: '',
         error: true,
-        errorMessage: 'Unable to locate ',
+        errorMessage: `${error}. Unable to locate `,
       })
 
     }
@@ -56,7 +56,7 @@ export default class App extends React.Component {
         </Button>
         {this.state.locationData.lat && <h1>{this.state.citySelection}</h1>}
         {this.state.locationData.lat && (
-          <Card class="card" style={{ width: "18rem" }}>
+          <Card class="card" style={{ width: "28rem" }}>
             <Card.Img
               variant="top"
               src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=12`}
@@ -64,8 +64,8 @@ export default class App extends React.Component {
             <Card.Body>
               <Card.Title>{this.state.locationData.display_name}</Card.Title>
               <Card.Text>
-                <p>Latitude: {this.state.locationData.lat}</p>
-                <p>Longitude: {this.state.locationData.lon}</p>
+                Latitude: {this.state.locationData.lat} <br></br>
+                Longitude: {this.state.locationData.lon}
               </Card.Text>
             </Card.Body>
           </Card>

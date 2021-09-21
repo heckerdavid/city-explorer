@@ -4,13 +4,11 @@
 
 * {
   background-color: #655B73;
-  margin: 3px;
 }
 
 input {
   padding: 5px;
-  padding-left: 15px;
-  margin: 15px;
+  padding-left: 25px;
   border: 3px solid #D5BFF2;
   border-radius: 10px 100px;
   color: black;
