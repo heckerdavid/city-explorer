@@ -19,21 +19,28 @@ export default class App extends React.Component {
 
     const response = await axios.get(url);
 
-    const locationData = response.data[0]
+    const locationData = response.data[0];
+
+    const mapURL = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${locationData.lat},${locationData.lon}&zoom=18`;
+
+    // const mapUrl = `https://us1.locationiq.com/v1/reverse.php?key=${process.env.REACT_APP_LIQ_KEY}&lat=${locationData.lat}&lon=${locationData.lon}&format=json`;
+
+    const mapResponse = await axios.get(mapURL);
+
+    console.log(mapResponse)
 
     this.setState({
       locationData: locationData,
       error: false,
+      map: mapResponse,
     })
 
-    console.log('state is ' + this.state.location)
-    console.log('data is' + locationData.display_name)
-    
   }
 
   updateCitySelection = (event) => {
     this.setState({citySelection: event.target.value})
   }
+
   render() {
     return (
       <>
@@ -47,15 +54,13 @@ export default class App extends React.Component {
         {this.state.citySelection && <h1>{this.state.citySelection}</h1>}
         {this.state.locationData.lat && (
           <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={
+              `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=18`} />
             <Card.Body>
               <Card.Title>{this.state.locationData.display_name}</Card.Title>
               <Card.Text>
-                <p>
-                Latitude: {this.state.locationData.lat}
-                </p>
-                <p>
-                Longitude: {this.state.locationData.lon}
-                </p>
+                <p>Latitude: {this.state.locationData.lat}</p>
+                <p>Longitude: {this.state.locationData.lon}</p>
               </Card.Text>
             </Card.Body>
           </Card>

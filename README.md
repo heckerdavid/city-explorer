@@ -22,9 +22,20 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 1620
 
-Finish time: _____
+Finish time: 1800
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hour 40 minutes
+
+Name of feature: Map: As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1810
+
+Finish time: 
+
+Actual time needed to complete: 
+
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
