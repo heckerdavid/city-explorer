@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from 'axios';
@@ -21,20 +21,10 @@ export default class App extends React.Component {
 
     const locationData = response.data[0];
 
-    const mapURL = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${locationData.lat},${locationData.lon}&zoom=18`;
-
-    // const mapUrl = `https://us1.locationiq.com/v1/reverse.php?key=${process.env.REACT_APP_LIQ_KEY}&lat=${locationData.lat}&lon=${locationData.lon}&format=json`;
-
-    const mapResponse = await axios.get(mapURL);
-
-    console.log(mapResponse)
-
     this.setState({
       locationData: locationData,
       error: false,
-      map: mapResponse,
     })
-
   }
 
   updateCitySelection = (event) => {
@@ -53,9 +43,9 @@ export default class App extends React.Component {
         </Button>
         {this.state.citySelection && <h1>{this.state.citySelection}</h1>}
         {this.state.locationData.lat && (
-          <Card style={{ width: "18rem" }}>
+          <Card class='card' style={{ width: "18rem" }}>
             <Card.Img variant="top" src={
-              `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=18`} />
+              `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=12`} />
             <Card.Body>
               <Card.Title>{this.state.locationData.display_name}</Card.Title>
               <Card.Text>
