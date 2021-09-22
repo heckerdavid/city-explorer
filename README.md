@@ -56,6 +56,18 @@ Finish time: 2030
 
 Actual time needed to complete: 20 minutes
 
+<!--  -->
+
+Name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->

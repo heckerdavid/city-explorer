@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from 'axios';
-
+import Weather from "./Components/weather";
 
 export default class App extends React.Component {
   constructor(props){
@@ -19,15 +19,19 @@ export default class App extends React.Component {
   handleClick = async () => {
     
     const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LIQ_KEY}&q=${this.state.citySelection}&format=json`;
-
+    
     try {
       const response = await axios.get(url);
-  
       const locationData = response.data[0];
+      
+      const localURL = `http://localhost:3001/weather?lat=${locationData.lat}&lon=${locationData.lon}&searchquery=${this.state.citySelection}`;
+      const localResponse = await axios.get(localURL);
+      console.log(typeof(localResponse.data))
   
       this.setState({
         locationData: locationData,
         error: false,
+        localResponse: localResponse.data,
       })
 
     } catch (error) {
@@ -68,6 +72,7 @@ export default class App extends React.Component {
               <Card.Text>
                 Latitude: {this.state.locationData.lat} <br></br>
                 Longitude: {this.state.locationData.lon}
+                <Weather localResponse={this.state.localResponse} />
               </Card.Text>
             </Card.Body>
           </Card>
