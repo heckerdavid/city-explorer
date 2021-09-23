@@ -3,7 +3,9 @@ import React from "react";
 export default class Weather extends React.Component {
   render() {
     return (
-      <h1>${this.props.localResponse}</h1>
-    )
+      <>
+        {this.props.localResponse && this.props.localResponse.map((city, idx) => (<h3 key={idx}>{city.date}<br></br>{city.description}</h3>))}
+      </>
+    );
   }
 }
