@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
 import Weather from "./Components/weather";
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);

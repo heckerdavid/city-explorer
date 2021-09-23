@@ -13,6 +13,7 @@ Allow the user to input a city name and receive data about the city
 
 - ![WRRC](./public/cameron.png)
 - ![Server](./public/jacob.png)
+- ![Server](./public/valtonsteve.png)
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -56,20 +57,43 @@ Finish time: 2030
 
 Actual time needed to complete: 20 minutes
 
-<!--  -->
+<!-- Lab 7 -->
 
-Name of feature: ________________________________
+Name of feature: Weather (placeholder): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip.
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hours
 
-Start time: _____
+Start time: 1600 / + 1 day 1730
 
-Finish time: _____
+Finish time: 2000 / + 1 day 1845
 
-Actual time needed to complete: _____
+Actual time needed to complete: ~ 5 hours
 
+Name of feature: Errors (revisited): As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 
+
+Finish time:
+
+Actual time needed to complete:
+
+<!--  Lab 8 -->
+
+Name of feature: Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1850
+
+Finish time: 2000
+
+Actual time needed to complete: ~ 1 hour
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 - Pair programmed 9/20/21 with Cameron Walden, covering the WRRC
 - Pair programmed 9/21/21 with Jacob Gregor, covering the server flow chart
+- Pair programmed 9/22/21 with Valton Jones and Steve Ngo, updated the server flow chart and reviewed code
+- Assisted by Sara Russert on 9/22/21, fixed weather data rendering issue
