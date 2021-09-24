@@ -63,7 +63,7 @@ export default class App extends React.Component {
         {this.state.locationData.lat && <h1>{this.state.citySelection}</h1>}
         {this.state.locationData.lat && (
           <>
-            <Card className="card" bg='dark' style={{ width: "28rem" }}>
+            <Card className="mapcard" bg='dark' style={{ width: "28rem" }}>
               <Card.Img
                 variant="top"
                 src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=12`}
