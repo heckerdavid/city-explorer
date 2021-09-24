@@ -5,9 +5,17 @@ export default class Movie extends React.Component {
   render() {
     return (
       <>
+        {this.props.movies.data && <h1>Local Movies</h1>}
+
         {this.props.movies.data &&
           this.props.movies.data.map((movie, idx) => (
-            <Card key={idx} className="card" style={{ width: "12rem" }}>
+            <Card
+              key={idx}
+              border="dark"
+              bg="dark"
+              className="card"
+              style={{ width: "12rem" }}
+            >
               <Card.Img variant="top" src={movie.img_url} />
               <Card.Body>
                 <Card.Title>{movie.title}</Card.Title>
