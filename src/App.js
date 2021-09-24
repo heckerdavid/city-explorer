@@ -19,12 +19,14 @@ export default class App extends React.Component {
 
   handleClick = async () => {
     const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LIQ_KEY}&q=${this.state.citySelection}&format=json`;
-    const movieURL = `http://localhost:3001/movies?searchQuery=${this.state.citySelection}`;
+    const movieURL = `https://city-explorer-api-david.herokuapp.com/movies?searchQuery=${this.state.citySelection}`;
+    // const movieURL = `http://localhost:3001/movies?searchQuery=${this.state.citySelection}`;
     
     try {
       const response = await axios.get(url);
       const locationData = response.data[0];
-      const weatherURL = `http://localhost:3001/weather?lat=${locationData.lat}&lon=${locationData.lon}&searchquery=${this.state.citySelection}`;
+      // const weatherURL = `http://localhost:3001/weather?lat=${locationData.lat}&lon=${locationData.lon}&searchquery=${this.state.citySelection}`;
+      const weatherURL = `https://city-explorer-api-david.herokuapp.com/weather?lat=${locationData.lat}&lon=${locationData.lon}&searchquery=${this.state.citySelection}`
 
       const localResponse = await axios.get(weatherURL);
       console.log(localResponse.data);
