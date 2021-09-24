@@ -14,6 +14,7 @@ Allow the user to input a city name and receive data about the city
 - ![WRRC](./public/cameron.png)
 - ![Server](./public/jacob.png)
 - ![Server](./public/valtonsteve.png)
+- ![Server](./public/harvey.png)
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -77,7 +78,7 @@ Start time:
 
 Finish time:
 
-Actual time needed to complete:
+Actual time needed to complete: so much time idk.
 
 <!--  Lab 8 -->
 
@@ -91,9 +92,23 @@ Finish time: 2000
 
 Actual time needed to complete: ~ 1 hour
 
+
+Name of feature: Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1700
+
+Finish time: 1930
+
+Actual time needed to complete: ~ 2.5 hours
+
+
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 - Pair programmed 9/20/21 with Cameron Walden, covering the WRRC
 - Pair programmed 9/21/21 with Jacob Gregor, covering the server flow chart
 - Pair programmed 9/22/21 with Valton Jones and Steve Ngo, updated the server flow chart and reviewed code
 - Assisted by Sara Russert on 9/22/21, fixed weather data rendering issue
+- Pair programmed with Harvey Lucas on 9/23/21, updated the server flow chart and reviewed code
