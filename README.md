@@ -92,7 +92,6 @@ Finish time: 2000
 
 Actual time needed to complete: ~ 1 hour
 
-
 Name of feature: Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination.
 
 Estimate of time needed to complete: 2 hours
@@ -103,8 +102,21 @@ Finish time: 1930
 
 Actual time needed to complete: ~ 2.5 hours
 
+<!-- Lab 9 -->
 
+Refactor. Took forever.
 
+<!-- Lab 10 -->
+
+Name of feature: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls.
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1330
+
+Finish time: 
+
+Actual time needed to complete: 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 - Pair programmed 9/20/21 with Cameron Walden, covering the WRRC
