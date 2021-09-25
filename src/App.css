@@ -15,10 +15,14 @@ input {
 }
 
 .card {
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
-  border: black;
+  margin-bottom: 70px;
+  float: left;
+  max-height: 750px;
+  overflow: scroll;
 }
+
 
 h1 {
   padding-left: 30px;

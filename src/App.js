@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
 import Weather from "./Components/weather.js";
 import Movie from './Components/movie.js';
+import Header from './Components/header.js';
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -56,17 +58,12 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <input
-          onChange={this.updateCitySelection}
-          placeholder="Find a city"
-        ></input>
-        <Button onClick={this.handleClick} variant="dark">
-          Explore!
-        </Button>
+        <Header updateCitySelection={this.updateCitySelection} handleClick={this.handleClick} />
+ 
         {this.state.locationData.lat && <h1>{this.state.citySelection}</h1>}
         {this.state.locationData.lat && (
           <>
-            <Card className="card" style={{ width: "28rem" }}>
+            <Card className="mapcard" bg='dark' style={{ width: "28rem" }}>
               <Card.Img
                 variant="top"
                 src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LIQ_KEY}&center=${this.state.locationData.lat},${this.state.locationData.lon}&zoom=12`}
