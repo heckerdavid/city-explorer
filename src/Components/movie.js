@@ -16,7 +16,7 @@ export default class Movie extends React.Component {
               className="card"
               style={{ width: "12rem" }}
             >
-              <Card.Img variant="top" src={movie.img_url} />
+              <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500' + movie.img_url} />
               <Card.Body>
                 <Card.Title>{movie.title}</Card.Title>
                 <Card.Text>
