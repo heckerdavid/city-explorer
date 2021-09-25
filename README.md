@@ -114,9 +114,9 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 1330
 
-Finish time: 
+Finish time: 1630
 
-Actual time needed to complete: 
+Actual time needed to complete: 3 hours
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 - Pair programmed 9/20/21 with Cameron Walden, covering the WRRC
